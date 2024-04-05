@@ -1,10 +1,11 @@
 <#$f
 .SYNOPSIS
-    This script is designed to publish GarnetServer into various platforms.
+    This script is designed to publish GarnetServer into various platforms. 
 
 .DESCRIPTION
 
-    Script to publish and zip / tar the GarnetServer executable from various Profiles
+    Script to publish the GarnetServer executable from various Profiles. It will clean up all the files not needed. 
+	It will NOT zip them all up as the files need to be signed before zipping.
    
    
 .EXAMPLE
@@ -15,7 +16,7 @@
 
 ################## CleanUpFiles ##################### 
 #  
-#  Takes the result and verifies it falls in the acceptable range (tolerance) based on the percentage. 
+#  Publishes the files and clean it up so only the necessary files will be ready to be zipped
 #  
 ######################################################
 function CleanUpFiles {
